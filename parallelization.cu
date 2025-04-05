@@ -3,7 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <cuda_runtime.h>
-#include<cmath>
+#include <cmath>
 #include <iomanip>
 using namespace std;
 
@@ -122,7 +122,7 @@ double* to_cuda_memory(double *host_data,int n){
 
 void save_to_csv(int day, double *position, double *velocity) {
     vector<string> planet_names={
-        "Sun", "Mercury", "Venus", "Earth", "Mars","Jupiter","Saturn","Uranus","Neptune"
+        "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"
     };
 
     for (int i = 0; i < N; i++) {
@@ -185,4 +185,3 @@ int main()
     cudaFree(new_velocity);
     return 0;
 }
-   
