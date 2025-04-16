@@ -14,7 +14,7 @@ using namespace std;
 #define MS_TO_AU_PER_DAY 1.0/1.731e+6
 #define G 6.67430e-11
 #define N 9
-#define DAY 1000
+#define DAY 100000
 
 __global__ void compute_gravitational_force(double *old_pos, double *old_vel, double *mass, double *new_pos, double *new_vel)
 {
